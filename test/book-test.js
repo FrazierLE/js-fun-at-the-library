@@ -10,6 +10,7 @@ var {
 } = require("../src/book.js");
 
 
+
 describe("book.js", function () {
   describe("createTitle", function() {
     it("should be a function", function () {
@@ -22,7 +23,7 @@ describe("book.js", function () {
       assert.equal(bookIdea, "The Storm's Awakening");
     });
 
-    it.skip("should be able to create many modified titles", function () {
+    it("should be able to create many modified titles", function () {
       var sushiTitle = createTitle("Dancing Sushi");
       var dragonTitle = createTitle("Dragon in the Summer");
       var ghostTitle = createTitle("Teenage Ghoul");
@@ -34,11 +35,11 @@ describe("book.js", function () {
   });
 
   describe("buildMainCharacter", function() {
-    it.skip("should be a function (comment the function back into the module.exports object in book.js)", function () {
+    it("should be a function (comment the function back into the module.exports object in book.js)", function () {
       assert.isFunction(buildMainCharacter);
     });
 
-    it.skip("should create a character object", function () {
+    it("should create a character object", function () {
       var ghoulCharacter = buildMainCharacter("Vassya", 16, "she/her");
       var bakerCharacter = buildMainCharacter("Hannah", 30, "she/her");
 
@@ -53,11 +54,11 @@ describe("book.js", function () {
   });
 
   describe("saveReview", function() {
-    it.skip("should be a function (comment the function back into the module.exports object in book.js)", function () {
+    it("should be a function (comment the function back into the module.exports object in book.js)", function () {
       assert.isFunction(saveReview);
     });
 
-    it.skip("should be able to add reviews to an array", function() {
+    it("should be able to add reviews to an array", function() {
       var reviews = [];
 
       saveReview("An astounding success", reviews);
