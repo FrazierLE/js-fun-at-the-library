@@ -10,14 +10,15 @@
 // Initialize two new variables, "title", and "pages", and assign values to them with
 // a book's title and page count.
 
-// var title = "Harry Potter";
-// var ...
-
+var title = "Harry Potter";
+console.log(title);
+var pages = 700;
+console.log(pages);
 
 
 // Reassign (not initialize) your "pages" variable from above. An editor came around and
 // condensed the book, use a built in math operator to make the page count a quarter
-// of what it currently is 
+// of what it currently is
 
 
 
@@ -47,7 +48,7 @@
 
 
 // Express the following in code: If the variable "pages" is less than 1000 log
-// the statement 'I could read that in a day!', otherwise, log the statement 
+// the statement 'I could read that in a day!', otherwise, log the statement
 // 'Ok, maybe I could read that in a day and a half'
 
 
