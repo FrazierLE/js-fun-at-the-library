@@ -19,12 +19,13 @@ if (libraryName.shelves.hasOwnProperty('fiction') === true && book.genre === 'fi
 libraryName.shelves.fiction.push(book) }
 }
 
+
   function checkoutBook(libraryName, book, genre) {
   var titlesOnShelf = []
   for (var i = 0; i < libraryName.shelves.fiction.length; i++) {
     titlesOnShelf.push(libraryName.shelves.fiction[i].title)
 }
-for (var i = 0; i < libraryName.shelves.nonFiction.length; i++) {
+  for (var i = 0; i < libraryName.shelves.nonFiction.length; i++) {
   titlesOnShelf.push(libraryName.shelves.nonFiction[i].title) }
   for (var i = 0; i < libraryName.shelves.fantasy.length; i++) {
     titlesOnShelf.push(libraryName.shelves.fantasy[i].title)
@@ -42,12 +43,14 @@ for (var i = 0; i < libraryName.shelves.nonFiction.length; i++) {
   } else if (genre === 'fantasy') { for (var i = 0; i < libraryName.shelves.fantasy.length; i++) {
     if (libraryName.shelves.fantasy[i].title === book) {libraryName.shelves.fantasy.splice(i, 1)}
   return `You have now checked out ${book} from the ${libraryName.name}`}
-}
-if(titlesOnShelf.includes(book) !== book) {
+  }
+  if(titlesOnShelf.includes(book) !== book) {
   return `Sorry, there are currently no copies of ${book} available at the ${libraryName.name
   }`
 }
 }
+
+
 
 
 module.exports = {
