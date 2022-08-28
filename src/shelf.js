@@ -22,12 +22,6 @@ function listTitles(title) {
   }
 
 
-// function searchShelf(book) {
-//   for (var i = 0; i < book.length; i++) {
-//     if (book.some(book.title))
-//       return book.title[i] + true
-//     }
-// }
 function searchShelf(shelfName, bookName) {
   for (var i = 0; i < shelfName.length; i++) {
     if (shelfName[i].title === bookName) {
